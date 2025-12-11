@@ -7,7 +7,7 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-sm navbar-light bg-light">
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">
-                        <img src="../logo_recensando.jpg" alt="logo" />
+                        <img className="logo" src="../logo_recensando.jpg" alt="logo" />
                     </NavLink>
                     <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

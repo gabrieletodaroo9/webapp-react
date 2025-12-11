@@ -1,5 +1,12 @@
-header {
-    img {
-        width: 140px;
-    }
+.logo {
+    width: 140px;
+}
+
+.logo-lg {
+    width: 300px;
+}
+
+li>* {
+    text-decoration: none;
+    color: black;
 }
