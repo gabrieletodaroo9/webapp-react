@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Card from '../../components/Card'
 
 export default function Homepage() {
 
@@ -23,17 +24,8 @@ export default function Homepage() {
                         {
                             movies.map(movie =>
                                 <div key={movie.id} className="col mb-5">
-                                    <Link to='/contacts'>
-                                        <div className="card h-100">
-                                            <div className='img-container'>
-                                                <img src={`../../${movie.image}`} alt="" className="card-img-top object-fit-cover" />
-                                            </div>
-                                            <div className="card-body">
-                                                <h3>{movie.title}</h3>
-                                                <p>{movie.abstract}</p>
-                                                <p></p>
-                                            </div>
-                                        </div>
+                                    <Link to={`/${movie.id}`}>
+                                        <Card movie={movie} />
                                     </Link>
                                 </div>
                             )
