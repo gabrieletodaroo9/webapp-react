@@ -17,7 +17,7 @@ export default function Moviepage() {
                 console.log(err)
             }
             )
-    }, [id])
+    }, [])
 
     return (
         <>
@@ -40,7 +40,24 @@ export default function Moviepage() {
                                 </Link>
                             </div>
                         </div>
+                        <hr />
+                        <div className="reviews-container">
+                            <h2 className="text-center">Reviews</h2>
+
+                            {
+                                currentMovie.reviews.map(review =>
+                                    <div className="card my-5 p-3">
+                                        <h3>{review.vote}</h3>
+                                        <p>{review.review}</p>
+                                    </div>
+                                )
+                            }
+
+                        </div>
                     </div>
+
+
+
 
                 </>
             }
