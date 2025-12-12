@@ -17,9 +17,9 @@ export default function Homepage() {
 
     return (
         <>
-            <main>
+            <main className='bg-second'>
                 <div className="container">
-                    <h1 className='text-center my-5'>Best Movies</h1>
+                    <h1 className='text-center py-5'>Best Movies</h1>
                     <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4">
                         {
                             movies.map(movie =>

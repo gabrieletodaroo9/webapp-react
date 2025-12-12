@@ -37,3 +37,23 @@ img {
         object-fit: contain;
     }
 }
+
+.bg-first {
+    background-color: #CAC4CE;
+}
+
+.bg-second {
+    background-color: #F7ECE1;
+}
+
+header {
+    border-bottom: 1px solid #242038;
+}
+
+footer {
+    border-top: 1px solid #242038;
+}
+
+.card {
+    border: 1px solid #242038;
+}

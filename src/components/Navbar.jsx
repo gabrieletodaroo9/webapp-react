@@ -4,7 +4,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-sm navbar-light bg-light">
+            <nav className="navbar navbar-expand-sm navbar-light">
                 <div className="container">
                     <NavLink className="navbar-brand" to="/">
                         <img className="logo" src="../logo_recensando.jpg" alt="logo" />
