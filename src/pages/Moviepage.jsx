@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
+import StarVote from "../components/StarVote"
 
 export default function Moviepage() {
 
@@ -45,10 +46,12 @@ export default function Moviepage() {
                             <h2 className="text-center">Reviews</h2>
 
                             {
-                                currentMovie.reviews.map(review =>
-                                    <div className="card my-5 p-3">
-                                        <h3>{review.vote}</h3>
-                                        <p>{review.review}</p>
+                                currentMovie.reviews?.map(review =>
+                                    <div key={review.id} className="card my-5 p-3">
+                                        <h3>{review.name}</h3>
+                                        <p>{review.text}</p>
+                                        <StarVote vote={review.vote} />
+
                                     </div>
                                 )
                             }
