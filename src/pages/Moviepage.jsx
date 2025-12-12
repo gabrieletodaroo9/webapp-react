@@ -6,7 +6,6 @@ export default function Moviepage() {
 
     const [currentMovie, setCurrentMovie] = useState(null)
     const { id } = useParams()
-    const currentId = Number(id)
 
     useEffect(() => {
 
@@ -24,17 +23,21 @@ export default function Moviepage() {
         <>
             {currentMovie &&
                 <>
-                    <h1 className="text-center my-5">{currentMovie.title}</h1>
+
                     <div className="container">
                         <div className="row row-col-sm-1 row-cols-md-2">
-                            <div className="col">
-                                <img src={`../../${currentMovie.image}`} className="p-5" alt="" />
+                            <div className="col movie-page">
+                                <img src={`http://localhost:3000/${currentMovie.image}`} className="p-5 " alt="" />
                             </div>
                             <div className="col mb-5 d-flex flex-column justify-content-center align-items-center">
-                                <p>directed by: {currentMovie.director}</p>
-                                <p>genre: <span>{currentMovie.genre}</span></p>
-                                <p>plot: {currentMovie.abstract}</p>
-                                <p>release date: {currentMovie.release_year}</p>
+                                <h1 className="text-center my-5 fw-bold">{currentMovie.title}</h1>
+                                <p>Directed by: {currentMovie.director}</p>
+                                <p>Genre: <span>{currentMovie.genre}</span></p>
+                                <p>Plot: {currentMovie.abstract}</p>
+                                <p>Release date: {currentMovie.release_year}</p>
+                                <Link to='/'>
+                                    <strong className="fs-2 btn btn-dark text-white px-4 py-2 rounded-pill mt-5">Torna alla home</strong>
+                                </Link>
                             </div>
                         </div>
                     </div>
