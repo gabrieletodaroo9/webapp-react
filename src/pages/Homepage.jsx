@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Card from '../components/Card'
+import SocialSection from '../components/SocialSection'
+import MoviesSection from '../components/MoviesSection'
 
 export default function Homepage() {
 
@@ -17,21 +17,9 @@ export default function Homepage() {
 
     return (
         <>
-            <main className='bg-second'>
-                <div className="container">
-                    <h1 className='text-center py-5'>Best Movies</h1>
-                    <div className="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4">
-                        {
-                            movies.map(movie =>
-                                <div key={movie.id} className="col mb-5">
-                                    <Link to={`/${movie.id}`}>
-                                        <Card movie={movie} />
-                                    </Link>
-                                </div>
-                            )
-                        }
-                    </div>
-                </div>
+            <main className='bg-second pb-5'>
+                <MoviesSection movies={movies} />
+                <SocialSection />
             </main>
 
         </>
