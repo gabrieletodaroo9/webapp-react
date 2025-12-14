@@ -9,7 +9,7 @@ export default function SingleMovieDetails({ currentMovie }) {
                     <img src={`http://localhost:3000/${currentMovie.image}`} className="p-5 " alt="" />
                 </div>
                 <div className="col mb-5 d-flex justify-content-center align-items-center">
-                    <div className="card">
+                    <div className="card bg-third">
                         <h1 className="text-center py-3 fw-bold card-header">{currentMovie.title.toUpperCase()}</h1>
                         <div className="card-body">
                             <p className="fs-4"> <strong>Directed by:</strong> {currentMovie.director}</p>

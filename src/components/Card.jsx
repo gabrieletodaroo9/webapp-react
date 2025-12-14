@@ -2,7 +2,7 @@ export default function Card({ movie }) {
 
     return (
         <>
-            <div className="card h-100 border-0">
+            <div className="bg-third card h-100 border-0">
                 <div className='img-container'>
                     <img src={`http://localhost:3000/${movie.image}`} alt="" className="card-img-top object-fit-cover" />
                 </div>

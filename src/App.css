@@ -39,11 +39,15 @@ img {
 }
 
 .bg-first {
-    background-color: #CAC4CE;
+    background-color: #e4d4c5;
 }
 
 .bg-second {
     background-color: #F7ECE1;
+}
+
+.bg-third {
+    background-color: #ebd7c3;
 }
 
 header {
@@ -56,4 +60,8 @@ footer {
 
 .card {
     border: 1px solid #242038;
+}
+
+.RobotoCondensed {
+    font-family: "Roboto Condensed", sans-serif;
 }

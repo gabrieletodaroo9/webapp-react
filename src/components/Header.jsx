@@ -4,7 +4,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='bg-light'>
+            <header className='bg-first'>
                 <Navbar />
             </header>
 

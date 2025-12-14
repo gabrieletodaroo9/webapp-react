@@ -4,7 +4,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="bg-light">
+            <footer className="bg-first">
                 <div className="container py-5">
                     <div className="row">
                         <div className="col">
@@ -28,13 +28,13 @@ export default function Footer() {
                                 </li>
                                 <li>
                                     <Link to="/">
-                                        ciaone
+                                        Policy
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div className="col text-center">
-                            <img className="logo-lg" src="../logo_recensando.jpg" alt="logo" />
+                            <img className="logo-lg" src="../logo_recensando.png" alt="logo" />
                         </div>
                     </div>
                 </div>
