@@ -10,8 +10,10 @@ export default function ReviewForm({ movieId }) {
     }
 
     const [formData, setFormData] = useState(initialForm)
+    const [error, setError] = useState("")
 
     function handleSubmit(e) {
+        e.preventDefault()
         console.log("request completed")
         axios.post(`http://localhost:3000/api/movies/${movieId}/review`, formData)
             .then((res) => {
@@ -19,8 +21,13 @@ export default function ReviewForm({ movieId }) {
             })
             .catch((err) => {
                 console.log("error into the API store route")
-            })
-
+                if (err.response) {
+                    setError(err.response.data.message);
+                } else {
+                    setError("Server offline...");
+                }
+            }
+            )
     }
 
 
@@ -28,6 +35,11 @@ export default function ReviewForm({ movieId }) {
         <>
             <hr />
             <h2 className="text-center pt-3 fw-bold my-4">Write your personal review</h2>
+            {error && (
+                <div className="alert alert-danger p-1">
+                    ⚠️{error}
+                </div>
+            )}
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label fw-bold">Your name</label>

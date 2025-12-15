@@ -66,8 +66,9 @@ footer {
     font-family: "Roboto Condensed", sans-serif;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-select:focus {
     background-color: #ebd7c3;
     border-color: #F7ECE1;
-    box-shadow: 0, 0, 0, 0.25 rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25) !important;
 }
