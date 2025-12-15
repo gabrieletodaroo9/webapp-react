@@ -6,7 +6,7 @@ export default function SingleMovieReviews({ currentMovie }) {
         <>
             <hr />
             <div className="reviews-container pb-5">
-                <h2 className="text-center pt-3 fw-bold">Reviews</h2>
+                <h2 className="text-center pt-3 fw-bold">Users reviews</h2>
 
                 {
                     currentMovie.reviews?.map(review =>

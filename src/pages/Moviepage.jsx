@@ -36,10 +36,10 @@ export default function Moviepage() {
             {isLoading ? (
                 <Loader />
             ) : (
-                <main className='bg-second'>
+                <main className='bg-second RobotoCondensed'>
                     <div className="container">
                         <SingleMovieDetails currentMovie={currentMovie} />
-                        <ReviewForm />
+                        <ReviewForm movieId={currentId} />
                         <SingleMovieReviews currentMovie={currentMovie} />
                     </div >
                 </main >

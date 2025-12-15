@@ -18,7 +18,7 @@ export default function SingleMovieDetails({ currentMovie }) {
                             <p className="fs-4"> <strong> Release date:</strong>  {currentMovie.release_year}</p>
                             <div className="d-flex justify-content-center">
                                 <Link to='/'>
-                                    <strong className="fs-2 btn btn-dark text-white px-4 py-2 rounded-pill mt-5">Torna alla home</strong>
+                                    <strong className="fs-2 btn btn-dark text-white px-4 py-2 rounded mt-5">Torna alla home</strong>
                                 </Link>
                             </div>
                         </div>

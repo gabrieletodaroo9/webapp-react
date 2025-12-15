@@ -4,7 +4,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="bg-first">
+            <footer className="bg-first RobotoCondensed">
                 <div className="container py-5">
                     <div className="row">
                         <div className="col">

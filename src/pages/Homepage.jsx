@@ -23,7 +23,7 @@ export default function Homepage() {
         <>{isLoading ? (
             <Loader />
         ) : (
-            <main className='bg-second pb-5'>
+            <main className='bg-second pb-5 RobotoCondensed'>
                 <MoviesSection movies={movies} />
                 <SocialSection />
             </main>

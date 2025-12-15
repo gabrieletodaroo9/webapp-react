@@ -4,7 +4,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='bg-first'>
+            <header className='bg-first RobotoCondensed'>
                 <Navbar />
             </header>
 

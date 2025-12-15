@@ -6,7 +6,7 @@ export default function Contactspage() {
 
     return (
         <>
-            <main className="bg-second">
+            <main className="bg-second RobotoCondensed">
                 <div className="container py-5">
                     <h1 className="text-center pt-3 fw-bold">Contacts</h1>
                     <AssistanceMail />
