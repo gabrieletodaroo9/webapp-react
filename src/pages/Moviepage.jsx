@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import SingleMovieDetails from "../components/SingleMovieDetails"
 import SingleMovieReviews from "../components/SingleMovieReviews"
 import Loader from "../components/Loader"
+import ReviewForm from "../components/ReviewForm"
 
 export default function Moviepage() {
 
@@ -38,9 +39,10 @@ export default function Moviepage() {
                 <main className='bg-second'>
                     <div className="container">
                         <SingleMovieDetails currentMovie={currentMovie} />
+                        <ReviewForm />
                         <SingleMovieReviews currentMovie={currentMovie} />
-                    </div>
-                </main>
+                    </div >
+                </main >
             )
             }
         </>
